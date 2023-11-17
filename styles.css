@@ -1,0 +1,258 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+button{
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    background-color: #1d1d1d;
+    color: aliceblue;
+    padding: 13px 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+button:hover{
+    background-color: coral;
+}
+
+hr{
+    width: 30px;
+    height: 2px;
+    background-color: coral;
+}
+
+.star i{
+    font-size: 0.8rem;
+    color: goldenrod;
+}
+
+.navbar{
+    font-size: medium;
+    top: 0;
+    left: 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-item{
+    padding: 10px 20px;
+}
+.nav-link{
+    padding: 10px 0;
+    color: black;
+    transition: 0.7s;
+}
+.nav-link:hover,
+.nav-link:active{
+    color: coral;
+}
+
+.nav-item i:hover,
+.nav-item i:active{
+    color: coral;
+}
+
+.navbar .navbar-toggler{
+    border: none;
+    outline: none; 
+}
+.navbar .navbar-toggler:hover{
+    color: white;
+}
+.fa-solid .fa-bars{
+    font-size: 1.5rem;
+    padding: 7px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+    color: black;
+}
+.fa-solid .fa-bars:hover,
+.fa-solid .fa-bars:active{
+    color: white;
+}
+@media only screen and (max-width:991px) {
+    body > nav > div > button:hover,
+    body > nav > div > button:focus{
+        background-color: coral;
+    }
+}
+#navbarNav{
+    margin: 1rem;
+    justify-content: flex-end;
+    align-items: end;
+    text-align: right;
+}
+#home{
+    background-image:url("img/back.jpg") ;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: top 60px center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+#home span{
+    color: coral;
+}
+#new .one img{
+    width: 100%;
+    height: 70%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#new .one:nth-child(1) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+}
+#new .one:nth-child(2) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#new .one:nth-child(3) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+}
+#featured{
+    padding-top: 30px;
+}
+.product{
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+.product img{
+    transition: 0.3s all;
+    width: 100%;
+    height: 350px;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+.product:hover img{
+    opacity: 0.7;
+}
+
+.product .buy-btn{
+    background-color: coral;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.3s all;
+}
+.product:hover .buy-btn{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#banner{
+    background-image:url("img/banner/2.jpg") ;
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: top 60px center;
+    background-repeat: no-repeat;
+    background-image: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+#banner h4,
+#banner h1{
+    color: white;
+}
+#banner button{
+    background-color: coral;
+}
+
+footer{
+    background-color: #222222;
+    padding-bottom: 100px;
+}
+
+footer h2{
+    color: #d8d8d8;
+    font-weight: 800;
+    font-size: 30;
+}
+footer h5{
+    color: #d8d8d8;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+footer li{
+    padding-bottom: 4px;
+}
+
+footer li a{
+    font-size: 0.8rem;
+    color: #999;
+    text-decoration: none;
+}
+
+footer li a:hover{
+    color: #d8d8d8;
+}
+
+footer p{
+    color: #999;
+    font-size: 0.8rem;
+}
+
+footer .copyright a{
+    color: #000;
+    width: 38px;
+    height: 38px;
+    background-color: #fff;
+    display: inline-block;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    margin :0 5px;
+
+}
+footer .copyright a:hover{
+    color: black;
+    background-color: coral;
+}
+
+/* blog */
+
+
+#blog-container .post .post-img{
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#blog-container .post img{
+    transition: 0.3s;
+}
+#blog-container .post:hover img{
+    transform: scale(1.3) rotate(-10deg);
+    opacity: 0.8;
+}
+
+#blog-container .post h3{
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+
+#blog-container .post:hover h3{
+    color: coral;
+}
